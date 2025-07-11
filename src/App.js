@@ -1,24 +1,25 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes, Navigate } from 'react-router-dom';
+import LoginPage from './pages/LoginPage';
+import MainPage from './pages/MainPage';
+import TravelRecordForm from './pages/TravelRecordForm';
+import BottomNav from './components/BottomNav';
+import TravelRecordList from './pages/TravelRecordList';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <Router>
+      <div style={{ paddingBottom: '60px' }}>
+        <Routes>
+          <Route path="/" element={<Navigate to="/login" />} />
+          <Route path="/login" element={<LoginPage />} />
+          <Route path="/main" element={<MainPage />} />
+          <Route path="/record/create" element={<TravelRecordForm />} />
+          <Route path="/records" element={<TravelRecordList />} />
+        </Routes>
+        <BottomNav />
+      </div>
+    </Router>
   );
 }
 

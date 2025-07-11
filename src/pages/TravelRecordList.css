@@ -1,0 +1,32 @@
+.record-list-container {
+    padding: 20px;
+    height: calc(100vh - 60px); /* 네비게이션 바 고려 */
+    overflow-y: auto;
+    background-color: #f9f9f9;
+  }
+  
+  .record-list {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  
+  .record-card {
+    display: flex;
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+  }
+  
+  .thumbnail {
+    width: 120px;
+    height: 120px;
+    object-fit: cover;
+  }
+  
+  .record-info {
+    padding: 10px;
+    flex-grow: 1;
+  }
+  
