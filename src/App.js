@@ -5,6 +5,8 @@ import MainPage from './pages/MainPage';
 import TravelRecordForm from './pages/TravelRecordForm';
 import BottomNav from './components/BottomNav';
 import TravelRecordList from './pages/TravelRecordList';
+import TravelRecordDetail from './pages/TravelRecordDetail';
+
 
 function App() {
   return (
@@ -16,6 +18,7 @@ function App() {
           <Route path="/main" element={<MainPage />} />
           <Route path="/record/create" element={<TravelRecordForm />} />
           <Route path="/records" element={<TravelRecordList />} />
+          <Route path="/record/:id" element={<TravelRecordDetail />} />
         </Routes>
         <BottomNav />
       </div>

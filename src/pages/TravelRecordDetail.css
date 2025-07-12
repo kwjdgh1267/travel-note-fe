@@ -1,0 +1,21 @@
+.record-detail-container {
+    padding: 16px;
+  }
+  
+  .daily-section {
+    margin-top: 24px;
+  }
+  
+  .photo-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+  }
+  
+  .detail-photo {
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 8px;
+  }
+  
