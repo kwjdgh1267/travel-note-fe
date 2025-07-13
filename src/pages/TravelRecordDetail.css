@@ -13,9 +13,56 @@
   }
   
   .detail-photo {
-    width: 100px;
-    height: 100px;
+    width: 120px;
+    height: 120px;
     object-fit: cover;
     border-radius: 8px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.1); /* 그림자 */
+    transition: transform 0.2s ease; /* 마우스 올릴 때 효과 */
   }
+  
+  .detail-photo:hover {
+    transform: scale(1.05);
+  }
+  .memo-view-box {
+    background-color: #f9f9f9;
+    border-left: 4px solid #4caf50;
+    padding: 8px 12px;
+    margin: 8px 0;
+    border-radius: 4px;
+    font-size: 14px;
+    white-space: pre-wrap;
+  }
+  .memo-button {
+    margin-bottom: 10px;
+    padding: 4px 10px;
+    border: none;
+    background-color: #1976d2;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+  }
+  
+  .modal {
+    background: white;
+    padding: 20px;
+    width: 400px;
+    margin: auto;
+    border-radius: 8px;
+    top: 30%;
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, -30%);
+  }
+  
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+  }
+  
+  
   
